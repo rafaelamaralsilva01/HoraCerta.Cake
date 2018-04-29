@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HoraCerta": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ApiKey": "oy2kjzju4ws76i2nzgyqwumdx4hty2wupocae3xaomezla"
+      }
+    }
+  }
+}

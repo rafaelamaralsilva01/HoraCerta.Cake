@@ -1,0 +1,28 @@
+# 1. Install the bootstrapper of cake.
+# Windows
+Invoke-WebRequest
+https://cakebuild.net/download/bootstrapper/windows -OutFile
+build.ps1
+# Linux
+curl -Lsfo build.sh
+https://cakebuild.net/download/bootstrapper/linux
+
+# 2. Create a Cake Script
+Example:
+var target = Argument("target", "Default");
+
+Task("Default")
+  .Does(() =>
+{
+  Information("Hello World!");
+});
+
+RunTarget(target);
+
+
+# 3. Run the cake script
+# Windows
+./build.ps1
+# Linux
+chmod +x build.sh
+.build.sh
